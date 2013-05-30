@@ -10,8 +10,6 @@ public class HotelCollectionBean {
 		
 		// define the respondent hotel
 		private String hotelName;
-		
-
 		/*
 		 * define the set and get methods for hotel and total afford
 		 */

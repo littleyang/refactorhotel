@@ -79,22 +79,22 @@ public class CustomerTest {
 		}
 	}
 
-	@Test
-	public void testAnalysisTheDataStringAndGetTheDateTime() {
-		Customer customer = new Customer();
-		int[] date = {1,2,3};
-		int[] returns = customer.analysisTheDataStringAndGetTheDateTime("16Mar2009(mon), 17Mar2009(tues), 18Mar2009(wed)");
-		for(int i=0;i<date.length;i++){
-			assertEquals("when set the customer date time string and should get customer date array right!",date[i],returns[i]);
-		}
-	}
+//	@Test
+//	public void testAnalysisTheDataStringAndGetTheDateTime() {
+//		Customer customer = new Customer();
+//		int[] date = {1,2,3};
+//		int[] returns = customer.analysisTheDataStringAndGetTheDateTime("16Mar2009(mon), 17Mar2009(tues), 18Mar2009(wed)");
+//		for(int i=0;i<date.length;i++){
+//			assertEquals("when set the customer date time string and should get customer date array right!",date[i],returns[i]);
+//		}
+//	}
 
-	@Test
-	public void testParseTheDateStringToWeekDay() {
-		Customer customer = new Customer();
-		assertEquals("should get the right day!", 1, customer.parseTheDateStringToWeekDay("16Mar2009(mon)"));
-		
-	}
+//	@Test
+//	public void testParseTheDateStringToWeekDay() {
+//		Customer customer = new Customer();
+//		assertEquals("should get the right day!", 1, customer.parseTheDateStringToWeekDay("16Mar2009(mon)"));
+//		
+//	}
 
 	@Test
 	public void testSearchHotelAndFindAndReturnCheapestAndBestOneByRegularCustomer() {

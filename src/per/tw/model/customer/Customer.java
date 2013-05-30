@@ -66,7 +66,8 @@ public class Customer {
 			}else{
 				
 				// according to the  data string to get the customer date time
-				setReservationDateTime(analysisTheDataStringAndGetTheDateTime(tempStr[1]));
+				setReservationDateTime(analysiser.setCustomerTypeAndTimeData(tempStr[1]));
+				//setReservationDateTime(analysisTheDataStringAndGetTheDateTime(tempStr[1]));
 			}
 		}
 			
@@ -81,7 +82,7 @@ public class Customer {
 	 * 
 	 * @param str
 	 * @return
-	 */
+	 
 	public int[] analysisTheDataStringAndGetTheDateTime(String str){
 		
 		String[] tempDateTime = str.split(",");
@@ -91,12 +92,12 @@ public class Customer {
 		}
 		return returnResultDateTime;
 	}
-	
+	*/
 	/**
 	 * this method used to parse the day to the corresponding int number [1,2,3,4,5,6,7]
 	 * @param str
 	 * @return: int day
-	 */
+	 
 	public int parseTheDateStringToWeekDay(String str){
 		int day = 0;
 		Matcher m = Pattern.compile("\\(([^)]*)\\)").matcher(str);
@@ -112,7 +113,7 @@ public class Customer {
            }
 		}
 		return day;
-	}
+	}*/
 	
 	/**
 	 * 
