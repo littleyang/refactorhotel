@@ -7,6 +7,16 @@ import per.tw.customer.data.common.AnalysisTheStringForCustomer;
 
 public class CustomerDataStringAnalysiser implements AnalysisTheStringForCustomer {
 
+	/**
+	 * this  method is used to parse the data to day of the week and set the string date time to an int array
+	 * so the hotel will easily to calculate the total afford.
+	 * 
+	 * change data:["16Mar2009(mon)","17Mar2009(tues)","18Mar2009(wed)","18Mar2009(thur)"]
+	 * to data:[1,2,3,4]
+	 * 
+	 * @param str
+	 * @return
+	 */
 	@Override
 	public int[] analysisTheDataStringAndGetTheDateTime(String str) {
 		// TODO Auto-generated method stub
@@ -19,6 +29,13 @@ public class CustomerDataStringAnalysiser implements AnalysisTheStringForCustome
 			return returnResultDateTime;
 	}
 
+
+	/**
+	 * this method used to parse the day to the corresponding int number [1,2,3,4,5,6,7]
+	 * @param str
+	 * @return: int day
+	 */
+	
 	@Override
 	public int parseTheDateStringToWeekDay(String str) {
 		// TODO Auto-generated method stub

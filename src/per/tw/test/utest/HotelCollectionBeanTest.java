@@ -6,7 +6,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import per.tw.model.hotel.databean.HotelCollectionBean;
+import per.tw.customer.databean.HotelCollectionBean;
 
 public class HotelCollectionBeanTest {
 

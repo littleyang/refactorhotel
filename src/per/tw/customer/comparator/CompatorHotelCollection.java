@@ -2,7 +2,7 @@ package per.tw.customer.comparator;
 
 import java.util.Comparator;
 
-import per.tw.model.hotel.databean.HotelCollectionBean;
+import per.tw.customer.databean.HotelCollectionBean;
 
 public class CompatorHotelCollection implements Comparator<Object>  {
 

@@ -7,7 +7,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import per.tw.customer.comparator.CompatorHotelCollection;
-import per.tw.model.hotel.databean.HotelCollectionBean;
+import per.tw.customer.databean.HotelCollectionBean;
 
 
 public class CompatorHotelCollectionTest {
